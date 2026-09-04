@@ -6,7 +6,7 @@
 [![Supabase](https://img.shields.io/badge/Supabase-Database%20%26%20Auth-emerald?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
 [![License](https://img.shields.io/badge/Status-Canl%C4%B1da%20Yay%C4%B1nda-success?style=for-the-badge)](#)
 
-> **Airbnb** ve modern konaklama kiralama platformlarından ilham alınarak geliştirilmiş; uçtan uca üyelik, ilan yönetimi, dinamik takvim kilitleri, yönetici onay paneli ve e-posta bildirim motoru barındıran **tam teşekküllü (Full-Stack) Rezervasyon Platformu**.
+> Modern konaklama ve tatil kiralama platformlarından ilham alınarak geliştirilmiş; uçtan uca üyelik, ilan yönetimi, dinamik takvim kilitleri, yönetici onay paneli ve e-posta bildirim motoru barındıran **tam teşekküllü (Full-Stack) Rezervasyon Platformu**.
 
 ---
 
@@ -27,7 +27,7 @@ Bu depo, projenin mimarisini, teknik yeteneklerini ve canlı demosunu sergilemek
 
 ### 1. 👥 Kullanıcı Yetkilendirme & Profil Yönetimi
 * **Kayıt ve Güvenlik:** Ad, Soyad, Doğum Tarihi, E-posta, Şifre ve Şifre Tekrarı doğrulaması.
-* **E-posta Aktivasyonu:** Supabase Auth ve SMTP entegrasyonuyla gelen kutusuna aktivasyon linki gönderimi.
+* **E-posta Aktivasyonu:** Supabase Auth ve Gmail SMTP entegrasyonuyla gelen kutusuna aktivasyon linki gönderimi.
 * **Hesap & Profil Paneli (`/profile`):** Kullanıcının kişisel bilgilerini güncellemesi ve güvenli şifre değiştirme ekranı.
 
 ### 2. 🔍 İlan Keşfi, Arama & Canlı Filtreleme
@@ -52,7 +52,7 @@ Bu depo, projenin mimarisini, teknik yeteneklerini ve canlı demosunu sergilemek
   * **Bekleyenler, Onaylananlar** ve **Red / İptal** sekmeleri.
   * Tek tıkla rezervasyon **Onaylama** veya **Reddetme**.
 
-### 5. 📧 Çift Motorlu E-posta ve Bildirim Sistemi
+### 5. 📧 E-posta ve Bildirim Sistemi
 * **Yöneticiye Anlık Rezervasyon Maili:** Misafir talep oluşturduğu anda yöneticiye misafirin Adı-Soyadı, E-postası, tarihleri ve toplam tutarını içeren özel tasarımlı HTML maili gönderilir.
 * **Misafire Durum Maili:** Yönetici rezervasyonu onayladığında veya reddettiğinde misafire bilgilendirme e-postası iletilir.
 * **Site İçi Zil Bildirimleri (`/notifications`):**
@@ -74,7 +74,7 @@ Bu depo, projenin mimarisini, teknik yeteneklerini ve canlı demosunu sergilemek
 | **Veritabanı & BaaS** | **Supabase** (PostgreSQL 15+, Triggers, PL/pgSQL Fonksiyonları) |
 | **Güvenlik** | **Row Level Security (RLS)** ile veri izolasyonu |
 | **Depolama (Storage)** | **Supabase Storage** (Görsel optimizasyonu ve CDN) |
-| **E-posta Motoru** | **Nodemailer** (Gmail SMTP) & **Resend API** |
+| **E-posta Motoru** | **Nodemailer** (Gmail SMTP Entegrasyonu) |
 | **İkonlar & Tarih** | **Lucide React**, `date-fns` (Türkçe yerelleştirme) |
 | **Tasarım & Stil** | Özel CSS Design System (CSS Modules, Glassmorphism, HSL Renk Paleti) |
 | **Dağıtım (Hosting)** | **Vercel** (Global Edge Network, Otomatik SSL) |
